@@ -59,7 +59,7 @@ jQuery(function ($) {
 
    if ($('.countdown').length > 0) {
       $(".countdown").jCounter({
-         date: '15 January 2022 12:00:00',
+         date: '15 January 2022 9:00:00',
          fallback: function () {
             console.log("count finished!")
          }
