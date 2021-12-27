@@ -5,10 +5,5 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: trigger single Job
-      uses: appleboy/jenkins-action@master
-      with:
-        url: "https://jenkins.startupmission.in"
-        user: "sidharth"
-        token: "11a98938a698a4b81a21289cccd1ec2c58"
-        job: "iedcsummit"
+      - name: webhook
+        run: curl -I -u BuildUser:11da16b017ac2524573c9574afd83e1111 https://jenkins.startupmission.in/job/iedcsummit/build?token=iedcsummit
