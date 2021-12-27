@@ -1,0 +1,14 @@
+name: push to server
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "https://jenkins.startupmission.in"
+        user: "sidharth"
+        token: "11a98938a698a4b81a21289cccd1ec2c58"
+        job: "iedcsummit"
