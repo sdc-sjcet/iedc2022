@@ -1,10 +1,4 @@
 /*
-
-	Template Name: Exhibit - Conference & Event HTML Template
-	Author: Themewinter
-	Author URI: https://themeforest.net/user/themewinter
-	Description: Exhibit - Conference & Event HTML Template
-	Version: 1.0
    =====================
    table of content 
    ====================
