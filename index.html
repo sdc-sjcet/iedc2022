@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140159786-3"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140159786-3');
+   </script>
+
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -96,7 +106,7 @@
                   </nav>
                </div>
                <div class="col-lg-2 d-none d-lg-block text-right">
-                  <a class="ticket-btn btn"
+                  <a class="ticket-btn btn" data-external 
                      href="https://www.townscript.com/v2/e/iedc-summit-2022-031400/booking/tickets"> Buy Ticket</a>
                </div>
             </div>
@@ -151,7 +161,7 @@
                            </div>
                         </div>
                         <div class="banner-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="800ms">
-                           <a href="https://www.townscript.com/v2/e/iedc-summit-2022-031400/booking/tickets"
+                           <a href="https://www.townscript.com/v2/e/iedc-summit-2022-031400/booking/tickets" data-external 
                               class="btn">Buy Ticket</a>
                            <!-- <a href="https://calendar.google.com/calendar" target="_blank" class="btn btn-ticket"> <i
                                  class="fa fa-plus-circle" aria-hidden="true"></i> ADD
@@ -1404,6 +1414,25 @@
       <script src="js/jquery.scrollme.js"></script>
 
       <script src="js/main.js"></script>
+
+      <!-- Google Analytics click tracking -->
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            var links = [].slice.call(document.querySelectorAll('[data-external]'));
+
+            links.map(link => {
+               link.addEventListener('click', function(e){
+                  e.preventDefault();
+                  var url = link.getAttribute('href');
+                  gtag('event', 'sign_up', {
+                     'event_callback': function(){document.location = url;}
+                  });
+               });
+            })
+
+            console.log(links);
+         });
+      </script>
 
    </div>
    <!-- Body inner end -->
