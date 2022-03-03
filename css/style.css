@@ -1159,7 +1159,7 @@ img.pull-right {
 
 .ts-speaker {
   position: relative;
-  text-align: center;
+  text-align: left;
   margin-bottom: 55px; }
   .ts-speaker .speaker-img {
     width: 255px;
@@ -1253,10 +1253,10 @@ img.pull-right {
       position: absolute;
       right: 0;
       bottom: -13px;
-      background: #fff;
+      background: rgb(249, 254, 255);
       z-index: 1;
       width: 90%;
-      padding: 20px 0 10px; }
+      padding: 15px 0 20px; }
       .speaker-classic .ts-speaker .ts-speaker-info .ts-title {
         margin-bottom: 0; }
       .speaker-classic .ts-speaker .ts-speaker-info p {
@@ -3208,4 +3208,31 @@ faq-item
 
 .schedule-listing h3 {
   margin-bottom: 0;
+}
+
+
+
+.grouped .schedule-slot-info {
+  border: none;
+}
+.schedule-listing {
+  flex-direction: row;
+  
+}
+.grouped {
+  /* display: block; */
+  flex-direction: row;
+}
+
+.inner-group {
+  flex-direction: column;
+}
+
+.ts-speakers h3, .ts-speakers p {
+  margin-left: 20px;
+}
+.ts-speakers p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  
 }
