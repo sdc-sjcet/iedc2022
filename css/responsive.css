@@ -498,8 +498,7 @@ small device /mobile sm and large
     .schedule-listing .schedule-slot-info {
       padding: 35px 40px 35px 35px;
       border-left: 1px dashed #e5e5e5; }
-      .schedule-listing .schedule-slot-info .schedule-slot-speakers {
-        display: none; }
+      
   .schedule-listing-btn {
     margin-top: 40px; }
   .ts-schedule-nav {
@@ -655,6 +654,14 @@ small device /mobile sm and large
     border: 0; }
   .header .navbar-nav {
     position: static;
-    margin: 0px; } }
+    margin: 0px; }
+  
+  
+    .schedule-listing .schedule-slot-info .schedule-slot-speakers {
+      position: initial;
+    
+    
+    
+    }
 
 /*# sourceMappingURL=responsive.css.map */

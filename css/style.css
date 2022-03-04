@@ -1471,6 +1471,7 @@ img.pull-right {
     width: 100%; }
     .schedule-listing .schedule-slot-info .schedule-slot-speakers {
       position: absolute;
+      margin-bottom: 200px;
       left: 40px;
       top: 0;
       height: 80px;
@@ -1632,7 +1633,7 @@ img.pull-right {
   .schedule-tabs-item .schedule-listing-item.schedule-left {
     padding: 60px 125px 20px 0;
     text-align: right;
-    margin-top: 245px; }
+  }
     .schedule-tabs-item .schedule-listing-item.schedule-left .schedule-slot-speakers {
       right: 30px; }
     .schedule-tabs-item .schedule-listing-item.schedule-left:before {
