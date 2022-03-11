@@ -1,0 +1,29 @@
+{
+  "name": "iedcsummit-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdc-sjcet/iedc2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdc-sjcet/iedc2022/issues"
+  },
+  "homepage": "https://github.com/sdc-sjcet/iedc2022#readme",
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.2.0",
+    "@snowpack/plugin-svelte": "^3.7.0",
+    "snowpack": "^3.8.8"
+  },
+  "dependencies": {
+    "svelte": "^3.46.4"
+  }
+}
